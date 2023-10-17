@@ -1,0 +1,41 @@
+.testimonials  {
+  height: 517px;  
+}
+
+.testimonials .testimony {
+  background: #f2e9e9;
+  border-radius: 15px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 12px; */
+
+}
+
+/* .testimonials h2 {
+  margin-top: 20px;
+} */
+img {
+  width: 320px;
+  height: 180px;
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    height: 634px;
+  }
+
+  .testimonials h2 {
+margin-bottom: 55px;
+  }
+
+  .testimonials .testimony {
+    width: 95%;
+  }
+
+  img {
+    width: 335px;
+    height: 165px;
+    border-radius: 10px;
+  }
+}

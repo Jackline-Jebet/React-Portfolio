@@ -1,0 +1,130 @@
+.about {
+  width: 100%;
+  height: 517px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* text-align: center; */
+  /* background: linear-gradient(45deg, #d1d4d2, #b6b4b4ef); */
+  /* flex: 50%; */
+}
+
+.aboutTop {
+  display: flex;
+  width: 95%;
+  height: 45%;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 250px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+}
+
+.aboutTop h2, span {
+  color:#f75023;
+  
+}
+.about h1 {
+  margin-left: 250px;
+  text-align: left;
+}
+
+.aboutTop, li {
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  color: #58575c;
+  text-align: left;
+}
+ 
+.about ul {
+  padding-left: 1.5em;
+  text-align: left;
+  list-style-type: none;
+}
+
+.top-btn {
+  text-decoration: none;
+  color: #f75023;
+  font-size: 18px;
+  transform: scale(0.3 ease);
+  margin-bottom: 15px;  
+}
+
+  .btn2 {
+  margin-bottom: 20px;
+  width: 13%;
+  border-radius: 12px;
+  margin-left: 250px;
+}
+
+.text {
+  background-color: #f75023;
+  transform: rotate(270deg);
+  height: 80px;
+  width: 500px;
+  z-index: 100;
+  margin-top: 175px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -10%;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #f75023;
+}
+
+.top-btn:hover {
+  background-color: #f75023;
+  color: black;
+}
+
+.aboutBottom {
+  display: flex;
+  flex-direction: column;
+  /* height: 55%; */
+  /* align-items: center; */
+  margin-top: -25px;
+  justify-content: left;
+  margin-left: 230px;
+}
+
+.aboutBottom h1 {
+  color: black;
+  text-align: left;
+  margin-right: auto;  
+}
+
+.aboutBottom p {
+  width: 1200px;
+}
+
+
+ @media (max-width: 768px) {
+  .about {
+    height: 589px;
+    margin-top: 45px;
+  } 
+
+  .btn2 {
+    margin-bottom: 90px;
+  }
+
+  .about ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .aboutTop h2, span {
+    margin-top: 40px;
+  }
+}

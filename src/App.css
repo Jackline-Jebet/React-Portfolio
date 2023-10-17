@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat, sans-serif
+
+}
+
+body, html {
+  padding: 0px;
+  margin: 0px;
+}
+
+.headerWrapper {
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: top 0.3s;
+}
+
+.sticky {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+transform: translateY(-100%); /* Hide the HeaderTop */
+}
+

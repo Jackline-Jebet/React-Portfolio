@@ -1,0 +1,135 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.contact {
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  margin-bottom: 0;
+  /* flex-wrap: wrap; */
+}
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.contact .leftContact {
+  height: 72%;
+  flex: 40%;
+  padding-top: 45px;
+  margin-top: 40px;
+  margin-left: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact .rightContact {
+  display: flex;
+  flex: 60%;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+/* .contact h1 { */
+  /* font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 10;
+  font-size: 50px;
+  margin-left: 30px; */
+/* } */
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  padding: 30px;
+}
+
+form input {
+  height: 40px;
+  width: 96%;
+  border: none;
+  border-bottom: 1px solid #121619;
+  color: black;
+}
+
+form textarea {
+  margin-top: 15px;
+  height: 60px;
+  width: 96%;
+  border: none;
+  border-bottom: 1px solid #121619;
+  color: black;
+
+}
+input::placeholder, 
+textarea::placeholder {
+  font-weight: bold;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form input:focus,
+textarea:focus {
+  outline: none;
+}
+
+form label {
+  margin-top: 15px;
+  color: grey;
+  text-align: left;
+}
+
+form button {
+  margin-top: 30px;
+  width: 140px;
+  height: 35px;
+  border: none;
+  background-color: black;
+  color: whitesmoke;
+  font: 15px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .contact {
+    width: auto;
+    height: 634px;
+    flex-direction: column;
+    margin-bottom: 0px;
+
+  }
+  form button {
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 0; */
+    margin-bottom: 0;
+  }
+
+  .form input, form textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+  .contact .leftContact,
+  .contact .rightContact {
+    /* flex: none; */
+    width: 100%;
+  }
+  .contact .leftContact {
+  width: 98%;
+  margin-right: 5px;
+
+  /* object-fit: contain; */
+  }
+
+}
+

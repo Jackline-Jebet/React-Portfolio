@@ -1,0 +1,306 @@
+.navbar {
+  width: 100%;
+  margin-top: 34px;
+  height: 85px;
+  /* background-color:rgb(96, 124, 142); */
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* padding-top: 50px; */
+}
+
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar .leftSide {
+  position: relative;
+  flex: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* .navbar .leftSide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 40%;  /* Start from the middle 
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right, transparent, rgba(18, 22, 25, 0.82));   Change rgba values to match navbar's background 
+  pointer-events: none;  Ensure the pseudo-element doesn't interfere with interactions 
+} */
+
+.navbar .leftSide img {
+  position: relative;
+  width: 160px;
+  object-fit: cover;
+  height: 80px;
+  z-index: 1;
+}
+
+.navbar .rightSide {
+  display: flex;
+  flex: 90%;
+  height: 100%;
+  align-items: center;
+  justify-content: left;
+  overflow-x: auto; 
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.navbar .rightSide::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+
+.navbar a {
+  /* color: white; */
+  color: black;
+  text-decoration: none;
+  margin: 0px 30px;
+  transition: text-decoration 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  font-size: 20px;
+  padding-top: 22px;
+  /* background-color: aqua; */
+  /* border: 1px solid blue; */
+}
+
+.navbar a:hover {
+  text-decoration: underline;  /* Add the underline on hover */
+  transform: scale(1.1);
+}
+
+.navbar .rightSide button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  /* top: 0; */
+}
+
+.navbar .rightSide svg {
+  font-size: 35px;
+  margin-top: 5px;
+}
+
+.navbar #open {
+  padding-left: 0px;
+}
+
+.navbar #open a {
+  width: 70px;
+  margin: 5px;
+}
+
+.navbar #open .hiddenLinks {
+  display: inherit;
+}
+
+/* .navbar .rightSide #open svg {
+  display: none;
+} */
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+
+.navbar #open img {
+  display: none;
+}
+
+.navbar #close img {
+  display: inherit;
+}
+/* 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: text-decoration 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  margin: 0 60px;
+  font-size: 20px;
+}
+
+.dropdown:hover {
+  text-decoration: underline;  /* Add the underline on hover 
+  transform: scale(1.1);
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 4;
+  /* width: 19px; 
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 0px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 20px;
+  /* width: 20px; */
+/* } */
+
+/* .portfolio-dropdown a {
+  color: black;
+  background-color: blue;
+  margin-bottom: 1px;
+  padding-right: 21px;
+} */
+
+/* .more-dropdown a {
+  color: black;
+  background-color: whitesmoke;
+  padding-right: 21px;
+  margin-bottom: 3px;
+
+} */
+
+/* .dropdown-content a:hover {
+  background-color: #8b8888;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown span {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  color: #fff;
+} */ 
+
+/* .dropdown span svg {
+  margin-left: 0px;
+} */
+
+
+@media only screen and (max-width: 900px) {
+  .navbar .rightSide a {
+    width: 70px;
+    
+  }
+
+  .navbar .leftSide {
+    padding-left: 0px;
+  }
+
+  .navbar .rightSide a {
+    padding: 0;
+    /* margin: 0 15px; */
+  }
+
+  /* .navbar .rightSide .more-dropdown {
+    display: none;
+  } */
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    /* background-color: #8b8888; */
+    margin: 1.5px 1px 0 1px;
+    width: auto;
+  }
+  .navbar .rightSide a {
+    display: none;
+  }
+
+  .navbar .rightSide {
+    justify-content: flex-end;
+    padding-right: 50px;
+  }
+
+  .navbar .rightSide button {
+    display: inherit;
+  }
+
+  .navbar .rightSide svg {
+    margin-top: 12px;
+    font-size: 30px;
+    margin-right: -6px;
+    border: 1px solid orangered;
+    background-color: orangered;
+  }
+  .navbar #open .rightSide svg {
+    display: none;
+  }
+
+  /* .navbar #open .faqs {
+    font-size: 56px;
+  } */
+
+  .navbar #open {
+    background-color: rgb(0, 0, 0, 1);
+     /* position: relative; */
+    opacity: 78%;
+    width: 840px;
+  }
+
+  .navbar #open .hiddenLinks a {
+    margin: 5px;
+    margin-inline: 20px;
+    font-size: 20px;
+  }
+
+  .navbar .rightSide #open button {
+    display: none;
+  }
+
+
+  /* .navbar .dropdown {
+    display: none;
+    margin-top: 3px;
+  }
+
+  .navbar #open .dropdown {
+    display: inline-block;
+  }
+
+  .portfolio-dropdown {
+    margin-left: 14px;
+
+  } */
+
+  /* .more-dropdown {
+    margin-left: 10px;
+    margin-right: 6px;
+  } */
+
+  /* .navbar #open .portfolio-dropdown-hidden span {
+    color: red;
+  } */
+
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar .rightSide button {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+
+  /* .navbar .rightSide .more-dropdown {
+    display: inline-block;
+  } */
+
+}
+

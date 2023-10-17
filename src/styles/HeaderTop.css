@@ -1,0 +1,29 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f75023;
+  color: #fff;
+  padding: 5px 20px;
+  font-size: 0.875rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+ .topbar-right .btnHome {
+  color: white;
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.topbar a {
+  margin-left: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.topbar a:hover {
+  text-decoration: underline;
+}

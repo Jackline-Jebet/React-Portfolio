@@ -1,0 +1,155 @@
+.portfolio {
+  width: 100%;
+  height: 517px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;  /* No scrolling on the portfolio itself */
+}
+
+.videos {
+    width: calc(100% - 30px);  /* Adjusted width considering button widths and some extra padding */
+    display: flex;  /* Videos should line up horizontally */
+    overflow-x: auto;  /* The videos container should be scrollable */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+   
+}
+
+.videos-container {
+  width: 100%;
+  max-width: 90vw;  /* You can adjust this value as needed */
+  position: relative;
+  overflow: hidden;  /*Hide the overflow to not show scrollbars here */
+  margin: 10px;
+  display: inline-block;
+}
+
+
+.selected video {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+   transform: scale(1.05);
+   opacity: 0.7;
+}
+
+
+.portfolio h2 {
+  color: #3f3f41;
+  margin-bottom: 28px;
+}
+
+.videos video {
+   flex: 0 0 auto;
+   margin: 10px;
+   transition: transform 0.3s ease;
+   border: 1px solid rgb(113, 118, 118);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   scroll-snap-align: start;
+   padding: 10px;
+   width: 370px;
+    height: 280px;
+    margin-inline: 7px;
+    margin-bottom: 0;
+}
+
+.videos video:hover {
+  transform: scale(1.05);
+}
+
+.videos-container .nav-btn {
+  position: absolute;
+  /* background-color: #f75023; */
+  color: white;
+  border: none;
+  border-radius: 0;
+  top: 40%;
+  /* transform: translate(-50%); */
+  transform: translateY(-50%);
+  padding: 6px 8px  6px 8px;
+  cursor: pointer;
+  z-index: 100;
+  margin: 0px 10px;
+  margin-left: 0;
+}
+
+.nav-btn:hover {
+  transform: scale(1.1) translateY(-50%);
+}
+
+
+#videoPrevBtn  {
+  position: absolute;
+  left: 0;
+}
+
+#videoNextBtn {
+  position: absolute;
+  right: 0;
+}
+
+
+.videos::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.video-button {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  transition: transform 0.3s ease;
+  margin-top: 30px;
+}
+
+.video-button:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .portfolio {
+    height: 634px;
+  }
+
+  .videos video {
+    border: none;
+    width: 330px;
+    /* padding: px; */
+  }
+
+  .videos {
+    margin-bottom: 0;
+    background: rgb(243, 243, 245);
+    margin-top: 110px;
+    margin-left: 0;
+    width: 370px;
+    /* padding: 15px; */
+    
+  }
+
+  .videos-container .nav-btn {
+     /* margin: 38px 0px; */
+    margin-right: 14px; 
+    margin-left: 0;
+    top: 55%;
+    padding: 5px 11px;
+  }
+
+  .videos-container {
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 0;
+    /* width: 600px; */
+  }
+
+  .portfolio h2 {
+    margin-top: 60px;
+    margin-bottom: -30px;
+  }
+}
