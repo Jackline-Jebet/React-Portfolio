@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import BackImage from "../assets/images/pic56.webp";
+// import BackImage from "../assets/images/pic30.jpg";
 import "../styles/About.css"
 import  Resume from "../Docs/Samuel_Muthoka_Resume.pdf";
 import "../styles/Home.css";
@@ -9,7 +9,7 @@ function Home() {
   return (
       <div className='home'>
         <div className='container'>
-          <div className='backgroundImg' style={{ backgroundImage: `url(${BackImage})` }}></div>
+          {/* <div className='backgroundImg' style={{ backgroundImage: `url(${BackImage})` }}></div> */}
           <div className='headerContainer'>
               <h1>!MC_Supersammy_254 All The WAy!</h1>
               <h2>For Legitimate Emceee</h2>
@@ -25,13 +25,14 @@ function Home() {
     
 
 <div className='about'  >
+{/* <div className='backgroundImg' style={{ backgroundImage: `url(${BackImage})` }}></div> */}
      <h1>About Me</h1>
      <div className='aboutTop'>
 
-     <div className='text'>
+     {/* <div className='text'>
           <p> Transforming Ordinary Events into Extraordinary Experiences.</p>
           <p> Lets bring Your Event's Story to Life, <br /> One Moment at a Time.</p>
-          </div>
+          </div> */}
 
      <h2>I'm</h2>
      <h3>Samuel Muthoka</h3>

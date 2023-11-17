@@ -8,7 +8,7 @@
   white-space: nowrap;
   scroll-snap-type: x mandatory;
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;  /* No scrolling on the portfolio itself */
+  overflow-x: hidden; /* No scrolling on the portfolio itself */
 }
 
 .videos {
@@ -19,6 +19,7 @@
     -ms-overflow-style: none;
     flex-wrap: nowrap;
     white-space: nowrap;
+    /* margin-top: auto;  */
    
 }
 
@@ -29,6 +30,8 @@
   overflow: hidden;  /*Hide the overflow to not show scrollbars here */
   margin: 10px;
   display: inline-block;
+  margin-top: auto; 
+  margin-bottom: auto;
 }
 
 

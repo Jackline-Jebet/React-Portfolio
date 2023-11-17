@@ -27,3 +27,12 @@
 .topbar a:hover {
   text-decoration: underline;
 }
+
+.social {
+  margin-right: 823px;
+}
+
+.social svg {
+  color: rgb(56, 54, 54);
+  /* transition: transform 0.3s ease; */
+}

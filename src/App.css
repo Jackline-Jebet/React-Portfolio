@@ -4,7 +4,8 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  font-family: Montserrat, sans-serif
+  /* font-family: Montserrat, sans-serif */
+  font-family: 'museo';
 
 }
 

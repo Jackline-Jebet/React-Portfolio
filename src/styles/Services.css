@@ -1,25 +1,30 @@
 .services {
   width: 100%;
-  height: 180vh;
+  height: 420vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(237, 237, 236);
-
+  margin-top: -880px;
+  /* background-color: rgb(237, 237, 236); */
+  
 }
 
 .container {
   max-width: 100%;
+  /* height: 1600px; */
   display: flex;
+  /* margin-top: -1800px; */
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   justify-content: space-between;
   align-items: center;
-  overflow: auto;
+  /* overflow: auto; */
   scrollbar-width: none;
   /* background-color: blue; */
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .container::-webkit-scrollbar {
@@ -27,20 +32,20 @@
 }
 
 .container .card {
-  width: 400px;
-  height: 480px;
-  /* border: 1px solid #ddd; */
+  width: 390px;
+  height: 525px;
   display: flex;
   flex-direction: column;
-  margin: 15px;
+  margin: 10px;
   padding: 10px;
   text-align: center;
   transition: transform 0.3s;
-  /* background-color: #dbdada; */
+  border: 1px solid #ddd;
+  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: rgba(202, 201, 201, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(250, 249, 249, 0.18);
+  /* background-color: rgba(202, 201, 201, 0.1); */
+  /* backdrop-filter: blur(10px); */
+  /* border: 1px solid rgba(250, 249, 249, 0.18); */
   /* overflow: auto; */
 }
 
@@ -86,24 +91,33 @@
   font-size: 22px;
 }
 
-@media only screen and (max-width: 800px) {
+
+/* @media only screen and (max-width: 1400px) { */
+  /* .services { */
+    /* height: auto; */
+    /* margin-top: -1950px; */
+  /* } */
+/* } */
+
+@media only screen and (max-width: 900px) {
   .services {
-    height: 634px;
+    height: 950vh;
   }
 
   .container .card {
-    width: calc(98% - 4px);
-    height: 475px;
-    /* width: calc(44% - 2px); */
+    /* width: calc(98% - 4px); */
+    height: 535px;
+    width: calc(44% - 2px);
      /* 2 card in a row */
     margin: 12px 0;
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (max-width: 768px) {
   .container .card {
+    width: calc(44% - 2px);
     /* width: calc(33.33% - 30px); Single card in a row */
     margin: 10px 0; 
-    /* height: auto; */
+    /* height: 940px; */
   }
 }

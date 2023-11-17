@@ -4,7 +4,7 @@ import HeaderTop from "./components/HeaderTop";
 import Navbar from './components/Navbar';
 import Footer from "./components/Footer"
 import Home from "./pages/Home";
-import About from "./pages/About";
+// import About from "./pages/About";
 import Services from "./pages/Services";
 import Videos from "./pages/Videos";
 import Gallery from "./pages/Gallery";
@@ -15,6 +15,8 @@ import Login from "./pages/Login"
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Register from "./components/Register";
 import ForgotPassword from "./components/ForgotPassword";
+import TermsConditions from "./pages/TermsConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy"
 
 
 
@@ -47,7 +49,7 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          {/* <Route path="/about" element={<About />} /> */}
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/videos" element={<Videos />} />
@@ -57,6 +59,9 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/terms" element={<TermsConditions />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+
         </Routes>
         <Footer />
       </Router>

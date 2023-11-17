@@ -1,5 +1,7 @@
 .testimonials  {
-  height: 517px;  
+  height: 567px; 
+  margin-top: 140px;
+  width: 100%;
 }
 
 .testimonials .testimony {
@@ -8,7 +10,7 @@
   width: 60%;
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 12px; */
+  margin-top: 12px;
 
 }
 
@@ -38,4 +40,11 @@ margin-bottom: 55px;
     height: 165px;
     border-radius: 10px;
   }
+}
+
+@media (max-width: 900px) {
+.testimonials {
+  height: 540px;
+  margin-top: 150px;
+ }
 }
